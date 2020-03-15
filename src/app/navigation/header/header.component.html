@@ -1,0 +1,110 @@
+<div
+  [ngStyle]="{
+    'font-family': 'Sans-serif',
+    'background-color': '#0f5558',
+    'min-width': '100%',
+    display: 'flex'
+  }"
+>
+  <div
+    [ngStyle]="{
+      'background-color': '#104c39',
+      height: '40px',
+      width: '50px',
+      display: 'flex'
+    }"
+    (click)="onToggleSidenav()"
+  >
+    <img
+      src="../../../assets/iconimages/grid-three-up-xxl.png"
+      [ngStyle]="{
+        'background-color': '#104c39',
+        height: '20px',
+        width: '20px',
+        margin: '10px 10px 10px 10px'
+      }"
+    />
+  </div>
+  <div
+    [ngClass.lt-sm]="{ width: '100%' }"
+    [ngStyle]="{
+      'font-family': 'Sans-serif',
+      'font-weight': '500',
+      width: '80%',
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+      color: 'white'
+    }"
+  >
+    <img src="../../../assets/logo/pridectiveEnergyLogo.png" />&nbsp; Predictive
+    Energy Instruments
+  </div>
+  <div
+    fxHide.lt-sm
+    [ngStyle]="{
+      'font-weight': '400',
+      width: '20%',
+      display: 'flex',
+      'justify-content': 'center',
+      'align-items': 'center',
+      color: 'white'
+    }"
+  >
+    <select
+      id="status"
+      [ngStyle]="{
+        'background-color': '#0f5558',
+        color: 'white',
+        border: '#104c39'
+      }"
+    >
+      <option value="Saadhvi">SAADHVI</option>
+    </select>
+  </div>
+</div>
+<div
+  fxHide.lt-sm
+  [ngStyle]="{
+    'font-family': 'Sans-serif',
+    'font-size': '11px',
+    'background-image': 'linear-gradient(to right, #44d99e , #2b9fae)',
+    'min-width': '100%',
+    'min-height': '75px',
+    display: 'flex',
+    'justify-content': 'space-around'
+  }"
+>
+  <div
+    [ngStyle]="{
+      display: 'flex',
+      'flex-direction': 'column',
+      'justify-content': 'center',
+      'align-items': 'center',
+      color: 'white'
+    }"
+    *ngFor="let i of menuItems"
+    id="{{ i.name }}"
+  >
+    <img src="{{ i.src }}" />
+    <div>
+      {{ i.name }}
+    </div>
+  </div>
+</div>
+<!-- <div>
+  <a routerLink="/home">Drag and Drop component generator</a>
+</div>
+<div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+    <li>
+      <a routerLink="/home">Home</a>
+    </li>
+    <li>
+      <a routerLink="/about">About</a>
+    </li>
+    <li>
+      <a routerLink="/download">Download</a>
+    </li>
+  </ul>
+</div> -->
