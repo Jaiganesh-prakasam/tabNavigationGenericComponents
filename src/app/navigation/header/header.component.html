@@ -85,6 +85,7 @@
     }"
     *ngFor="let i of menuItems"
     id="{{ i.name }}"
+    (click)="differentPageSelected(i.name)"
   >
     <img src="{{ i.src }}" />
     <div>
@@ -92,19 +93,3 @@
     </div>
   </div>
 </div>
-<!-- <div>
-  <a routerLink="/home">Drag and Drop component generator</a>
-</div>
-<div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-    <li>
-      <a routerLink="/home">Home</a>
-    </li>
-    <li>
-      <a routerLink="/about">About</a>
-    </li>
-    <li>
-      <a routerLink="/download">Download</a>
-    </li>
-  </ul>
-</div> -->
