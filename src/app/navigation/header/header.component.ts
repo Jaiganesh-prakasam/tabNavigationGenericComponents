@@ -59,6 +59,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   addPageBorderBottom(selectedPage, pageLink) {
     let element = document.getElementById(selectedPage);
     element.style.borderBottom = "solid 5px";
+    // to load the necessary component
     this.router.navigateByUrl("/page/" + pageLink);
   }
   // to remove highlighting

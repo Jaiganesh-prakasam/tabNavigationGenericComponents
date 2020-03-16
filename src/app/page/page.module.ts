@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 import { InstParameterComponent } from "./inst-parameter/inst-parameter.component";
 import { AlertsComponent } from "./alerts/alerts.component";
 import { LoadSurveyComponent } from "./load-survey/load-survey.component";
@@ -47,7 +49,7 @@ const routes: Routes = [
     MigrationStrategyComponent,
     AnalyticsComponent
   ],
-  imports: [RouterModule.forChild(routes), CommonModule],
+  imports: [RouterModule.forChild(routes), CommonModule, FlexLayoutModule],
   exports: [RouterModule]
 })
 export class PageModule {}
