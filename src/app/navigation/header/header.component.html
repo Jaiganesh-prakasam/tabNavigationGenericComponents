@@ -85,7 +85,7 @@
     }"
     *ngFor="let i of menuItems"
     id="{{ i.name }}"
-    (click)="differentPageSelected(i.name)"
+    (click)="differentPageSelected(i.name, i.pageLink)"
   >
     <img src="{{ i.src }}" />
     <div>
