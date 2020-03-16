@@ -1,10 +1,38 @@
 <div class="background">
   <div class="card-container" fxLayout="row" fxLayout.lt-sm="column">
-    <div class="card card-left card-top">1</div>
-    <div class="card card-right card-top">3</div>
+    <div class="card card-left card-top">
+      <key-value [keyValue]="i" *ngFor="let i of tableData">jai</key-value>
+    </div>
+    <div class="card card-right card-top">
+      <span [ngStyle]="{ 'font-size': '10px' }">
+        Transformers Name plate
+      </span>
+      <div>
+        <div>
+          <key-input-unit [key]="" [value]=""></key-input-unit>
+          <key-hv-lv [key]="" [value1]="" [value2]=""></key-hv-lv>
+          <key-hv-lv [key]="" [value1]="" [value2]=""></key-hv-lv>
+          <key-hv-lv [key]="" [value1]="" [value2]=""></key-hv-lv>
+        </div>
+        <div>
+          <key-input-unit [key]="" [value]=""></key-input-unit>
+          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
+          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
+          <key-input-unit [key]="" [value]=""></key-input-unit>
+          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
+          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
+          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
+          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
+          <key-input-unit [key]="" [value]=""></key-input-unit>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="card-container" fxLayout="row" fxLayout.lt-sm="column">
     <div class="card card-left card-bottom">1</div>
     <div class="card card-right card-bottom">1</div>
   </div>
 </div>
+<!-- Transformers Name plate Volts (no loads) Amperes Phases Type of Cooling
+Frequency impedance volts Connection symbols Core and winding Total weight Oil
+Year of manufacturer -->

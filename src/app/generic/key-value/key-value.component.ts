@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-key-value',
-  templateUrl: './key-value.component.html',
-  styleUrls: ['./key-value.component.sass']
+  selector: "key-value",
+  templateUrl: "./key-value.component.html",
+  styleUrls: ["./key-value.component.sass"]
 })
 export class KeyValueComponent implements OnInit {
-
-  constructor() { }
+  @Input("keyValue") data: any;
+  constructor() {}
 
   ngOnInit(): void {
+    console.log(this.data);
   }
-
 }

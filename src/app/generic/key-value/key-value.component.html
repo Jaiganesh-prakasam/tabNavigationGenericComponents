@@ -1,1 +1,11 @@
-<p>key-value works!</p>
+<div
+  [ngStyle]="{
+    display: 'flex',
+    'margin-bottom': '4px',
+    'font-size': '12px',
+    'font-family': 'Sans-serif'
+  }"
+>
+  <div [ngStyle]="{ 'min-width': '40%' }">{{ data["key"] }}</div>
+  <div [ngStyle]="{ width: '50%' }">{{ ":&nbsp;" + data["value"] }}</div>
+</div>

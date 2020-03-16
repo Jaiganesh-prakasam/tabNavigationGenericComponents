@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-key-input-unit',
-  templateUrl: './key-input-unit.component.html',
-  styleUrls: ['./key-input-unit.component.sass']
+  selector: "key-input-unit",
+  templateUrl: "./key-input-unit.component.html",
+  styleUrls: ["./key-input-unit.component.sass"]
 })
 export class KeyInputUnitComponent implements OnInit {
+  @Input("key") key: string;
+  @Input("value") value: number;
+  @Input("unit") unit: number;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
