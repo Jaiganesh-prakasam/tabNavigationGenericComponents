@@ -1,38 +1,167 @@
 <div class="background">
   <div class="card-container" fxLayout="row" fxLayout.lt-sm="column">
     <div class="card card-left card-top">
-      <key-value [keyValue]="i" *ngFor="let i of tableData">jai</key-value>
+      <key-value [keyValue]="i" *ngFor="let i of tableData"></key-value>
     </div>
     <div class="card card-right card-top">
-      <span [ngStyle]="{ 'font-size': '10px' }">
+      <span>
         Transformers Name plate
       </span>
-      <div>
-        <div>
-          <key-input-unit [key]="" [value]=""></key-input-unit>
-          <key-hv-lv [key]="" [value1]="" [value2]=""></key-hv-lv>
-          <key-hv-lv [key]="" [value1]="" [value2]=""></key-hv-lv>
-          <key-hv-lv [key]="" [value1]="" [value2]=""></key-hv-lv>
+      <div fxLayout="row" fxLayout.lt-sm="column">
+        <div
+          [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
+          [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
+        >
+          <key-input-unit [key]="'KVA'" [value]="72.3456"></key-input-unit>
+          <key-hv-lv
+            [key]="'Volts (loads)'"
+            [value1]="47233.42"
+            [value2]="323.32"
+          ></key-hv-lv>
+          <key-hv-lv
+            [key]="'Amperes'"
+            [value1]="3232.32"
+            [value2]="32.33"
+          ></key-hv-lv>
+          <key-hv-lv
+            [key]="'Phases'"
+            [value1]="323.56"
+            [value2]="23.43"
+          ></key-hv-lv>
         </div>
-        <div>
-          <key-input-unit [key]="" [value]=""></key-input-unit>
-          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
-          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
-          <key-input-unit [key]="" [value]=""></key-input-unit>
-          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
-          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
-          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
-          <key-input-unit [key]="" [value]="" [unit]=""></key-input-unit>
-          <key-input-unit [key]="" [value]=""></key-input-unit>
+        <div
+          [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
+          [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
+        >
+          <key-input-unit
+            [key]="'Type of Cooling'"
+            [value]="'cooltype5'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'Frequency'"
+            [value]="'43.33'"
+            [unit]="'HZ'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'impedance volts'"
+            [value]="1957.22"
+            [unit]="'(%)'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'Connection symbols'"
+            [value]="'DY 11'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'Core and winding'"
+            [value]="54.33"
+            [unit]="'Kg'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'Total weight'"
+            [value]="27.33"
+            [unit]="'Kg'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'Oil'"
+            [value]="79.92"
+            [unit]="'L'"
+          ></key-input-unit>
+          <key-input-unit
+            [key]="'Year of manufacturer'"
+            [value]="2010"
+          ></key-input-unit>
         </div>
       </div>
     </div>
   </div>
+
   <div class="card-container" fxLayout="row" fxLayout.lt-sm="column">
-    <div class="card card-left card-bottom">1</div>
-    <div class="card card-right card-bottom">1</div>
+    <div class="card card-left card-bottom">
+      <div style="display: flex;">
+        <div style="display: flex; align-items: center;width:20%">
+          <img src="../../../assets/iconimages/plugOrange.png" />
+          <span>
+            <b>
+              11.62%
+            </b>
+          </span>
+        </div>
+        <div style="width:50%; display: flex; justify-content: space-evenly;">
+          <button class="button-general button-shadow">Inst parameter</button>
+          <button class="button-general button-plain">Alerts</button>
+        </div>
+        <div style="width: 30%;display:flex; justify-content: flex-end;">
+          <button class="button-general button-raised">Main Transformer</button>
+        </div>
+      </div>
+      <div style="min-height: 30% ; display: flex; margin:5px;">
+        <div style="min-width: 20%;display: flex;align-items: center; ">
+          Current(A)
+        </div>
+        <div
+          style=" display:flex; min-width: 80%;justify-content: space-evenly;"
+        >
+          <ryb-grid
+            [col1Obj]="['R', 1.02]"
+            [col2Obj]="['Y', 1.02]"
+            [col3Obj]="['B', 1.02]"
+            style="width: 45%;"
+          ></ryb-grid>
+          <ryb-grid
+            [heading]="'Current (%)'"
+            [col1Obj]="['R', 1.02]"
+            [col2Obj]="['Y', 1.02]"
+            [col3Obj]="['B', 1.02]"
+            style="width: 45%;"
+          ></ryb-grid>
+        </div>
+      </div>
+      <div style="min-height: 30% ; display: flex; margin:5px;">
+        <div
+          style="min-width: 20%; display: flex; flex-direction: column; justify-content: space-evenly;"
+        >
+          <div>
+            Loading(kVA)
+          </div>
+          <div>
+            Loading(%)
+          </div>
+        </div>
+        <div
+          style=" display:flex; min-width: 80%;justify-content: space-evenly;"
+        >
+          <div style="display: flex; min-height: calc(100% - 6px); width: 45%;">
+            <div
+              style="min-width: 50%; display: flex; flex-direction: column; justify-content: space-evenly;"
+            >
+              <div>:0.85</div>
+              <div>:11.62</div>
+            </div>
+            <div
+              style="min-width: calc(50% - 6px); display: flex; flex-direction: column; justify-content: space-evenly; border: solid #eeeded 3px; font-size: 10px;"
+            >
+              <div>
+                <div style="padding-left: 20px;">Time</div>
+                <div style="padding-left: 20px;">04.17.16</div>
+              </div>
+              <div>
+                <div style="padding-left: 20px;">Date stamp</div>
+                <div style="padding-left: 20px;">2019-11-08</div>
+              </div>
+            </div>
+          </div>
+          <ryb-grid
+            [heading]="'Voltage'"
+            [col1Obj]="['R-N', 1.02]"
+            [col2Obj]="['Y-N', 1.02]"
+            [col3Obj]="['B-N', 1.02]"
+            style="width: 45%;"
+          ></ryb-grid>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="card card-right card-bottom"></div>
   </div>
 </div>
-<!-- Transformers Name plate Volts (no loads) Amperes Phases Type of Cooling
-Frequency impedance volts Connection symbols Core and winding Total weight Oil
-Year of manufacturer -->

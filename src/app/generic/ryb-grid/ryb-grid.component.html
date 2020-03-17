@@ -1,1 +1,31 @@
-<p>ryb-grid works!</p>
+<div
+  style="display: flex;flex-direction: column; border: solid #eeeded 3px; min-height: calc(100% - 6px);"
+>
+  <div
+    style="min-height: 20px;margin: 2px;display: flex; justify-content: center;"
+  >
+    {{ heading }}
+  </div>
+  <div style="display: flex; min-height: 40px; justify-content: space-evenly;">
+    <span>
+      {{ col1[0] }}
+    </span>
+    <span>
+      {{ col2[0] }}
+    </span>
+    <span>
+      {{ col3[0] }}
+    </span>
+  </div>
+  <div style="display: flex; min-height: 40px; justify-content: space-evenly;">
+    <span>
+      {{ col1[1] }}
+    </span>
+    <span>
+      {{ col2[1] }}
+    </span>
+    <span>
+      {{ col3[1] }}
+    </span>
+  </div>
+</div>

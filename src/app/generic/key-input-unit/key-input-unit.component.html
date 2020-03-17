@@ -1,1 +1,20 @@
-<p>key-input-unit works!</p>
+<div
+  [ngStyle]="{
+    display: 'flex',
+    'margin-bottom': '4px'
+  }"
+>
+  <div [ngStyle]="{ width: '50%' }">{{ key }}</div>
+  <div style="display: flex;">
+    <div
+      [ngStyle]="{
+        border: 'solid black 1px',
+        'min-width': '60px',
+        'text-align': 'center'
+      }"
+    >
+      {{ &nbsp;value }}
+    </div>
+    <div style="margin-left: 10px;" *ngIf="unit">{{ unit }}</div>
+  </div>
+</div>

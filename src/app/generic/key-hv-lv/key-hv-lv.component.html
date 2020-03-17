@@ -1,1 +1,43 @@
-<p>key-hv-lv works!</p>
+<div
+  [ngStyle]="{
+    display: 'flex',
+    'margin-bottom': '4px'
+  }"
+>
+  <div [ngStyle]="{ width: '30%', 'align-self': 'center' }">{{ key }}</div>
+  <div
+    [ngStyle]="{
+      width: '20%',
+      pading: '5px',
+      'align-items': 'center'
+    }"
+    class="partial-border"
+  >
+    <div style="padding-left: 10px; padding-top: 2px;">
+      H.V
+    </div>
+    <div style="padding-left: 10px;">
+      L.V
+    </div>
+  </div>
+  <div style="border-left:solid black 1px 0px">
+    <div
+      [ngStyle]="{
+        border: 'solid black 1px',
+        'min-width': '60px',
+        'text-align': 'center'
+      }"
+    >
+      {{ value1 }}
+    </div>
+    <div
+      [ngStyle]="{
+        border: 'solid black 1px',
+        'min-width': '60px',
+        'text-align': 'center'
+      }"
+    >
+      {{ value2 }}
+    </div>
+  </div>
+</div>
