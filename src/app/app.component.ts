@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import * as FusionCharts from "fusioncharts";
 
 @Component({
   selector: "app-root",
@@ -6,6 +7,5 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.sass"]
 })
 export class AppComponent {
-  title = "saadhvi";
   open() {}
 }

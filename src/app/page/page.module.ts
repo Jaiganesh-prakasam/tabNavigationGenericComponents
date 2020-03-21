@@ -3,6 +3,12 @@ import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { GenericModule } from "../generic/generic.module";
+import { FusionChartsModule } from "angular-fusioncharts";
+
+import * as FusionCharts from "fusioncharts";
+import * as charts from "fusioncharts/fusioncharts.charts";
+import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+import * as Widgets from "fusioncharts/fusioncharts.widgets";
 
 import { InstParameterComponent } from "./inst-parameter/inst-parameter.component";
 import { AlertsComponent } from "./alerts/alerts.component";
@@ -41,6 +47,8 @@ const routes: Routes = [
     component: AnalyticsComponent
   }
 ];
+
+FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
 @NgModule({
   declarations: [
     InstParameterComponent,
@@ -54,7 +62,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     FlexLayoutModule,
-    GenericModule
+    GenericModule,
+    FusionChartsModule
   ],
   exports: [RouterModule]
 })

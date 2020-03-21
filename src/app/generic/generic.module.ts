@@ -5,6 +5,7 @@ import { KeyInputUnitComponent } from "./key-input-unit/key-input-unit.component
 import { KeyHvLvComponent } from "./key-hv-lv/key-hv-lv.component";
 import { RybListComponent } from "./ryb-list/ryb-list.component";
 import { RybGridComponent } from "./ryb-grid/ryb-grid.component";
+import { OilLevelChartComponent } from "./oil-level-chart/oil-level-chart.component";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { RybGridComponent } from "./ryb-grid/ryb-grid.component";
     KeyInputUnitComponent,
     KeyHvLvComponent,
     RybListComponent,
-    RybGridComponent
+    RybGridComponent,
+    OilLevelChartComponent
   ],
   imports: [CommonModule],
   exports: [
@@ -20,7 +22,8 @@ import { RybGridComponent } from "./ryb-grid/ryb-grid.component";
     KeyInputUnitComponent,
     KeyHvLvComponent,
     RybListComponent,
-    RybGridComponent
+    RybGridComponent,
+    OilLevelChartComponent
   ]
 })
 export class GenericModule {}

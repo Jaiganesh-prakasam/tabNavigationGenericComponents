@@ -168,24 +168,70 @@
           </div>
         </div>
         <div
-          style="min-width: calc(50% - 6px); display: flex; flex-direction: column; justify-content: space-evenly; border: solid #eeeded 3px; font-size: 10px;"
+          style="min-width: calc(50% - 6px); display: flex; justify-content: space-evenly; border: solid #eeeded 3px; font-size: 10px;"
         >
           <!-- temp graphs -->
+          <div class="temp-container">
+            <div class="temp-heading">HST</div>
+            <fusioncharts
+              width="65"
+              height="90"
+              type="thermometer"
+              dataFormat="JSON"
+              [dataSource]="dataSource"
+            ></fusioncharts>
+            <div class="temp-heading">{{ "*" + this.maxValue }}</div>
+          </div>
+          <div class="temp-container">
+            <div class="temp-heading">Top Oil</div>
+            <fusioncharts
+              width="65"
+              height="90"
+              type="thermometer"
+              dataFormat="JSON"
+              [dataSource]="dataSource"
+            ></fusioncharts>
+            <div class="temp-heading">{{ "*" + this.maxValue }}</div>
+          </div>
+          <div class="temp-container">
+            <div class="temp-heading">Conservator</div>
+            <fusioncharts
+              width="65"
+              height="90"
+              type="thermometer"
+              dataFormat="JSON"
+              [dataSource]="dataSource"
+            ></fusioncharts>
+            <div class="temp-heading">{{ "*" + this.maxValue }}</div>
+          </div>
         </div>
         <div
           style=" display:flex; min-width: 30%;justify-content: space-evenly;"
         >
-          <div style="display: flex; min-height: calc(100% - 6px); width: 45%;">
+          <div style="display: flex; min-height: calc(100% - 6px); width: 80%;">
             <div
-              style="min-width: calc(50% - 6px); display: flex; flex-direction: column; justify-content: space-evenly; border: solid #eeeded 3px; font-size: 10px;"
+              style="min-width: calc(100% - 6px); display: flex; flex-direction: column; justify-content: space-evenly; border: solid #eeeded 3px; font-size: 10px;"
             >
               <!--  oil graphs -->
+              <div class="temp-container">
+                <div class="temp-heading">Oil level</div>
+                <div class="temp-body">
+                  <oil-level-chart></oil-level-chart>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="card card-right card-bottom"></div>
+    <div class="card card-right card-bottom">
+      <div fxLayout="row" fxLayout.lt-sm="column">
+        <div
+          [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
+          [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
+        ></div>
+      </div>
+    </div>
   </div>
 </div>
