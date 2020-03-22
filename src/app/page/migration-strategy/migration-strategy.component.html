@@ -94,7 +94,7 @@
           <button class="button-general button-raised">Main Transformer</button>
         </div>
       </div>
-      <div style="min-height: 30% ; display: flex; margin:5px;">
+      <div style="min-height: 50px ; display: flex; margin:5px;">
         <div style="min-width: 20%;display: flex;align-items: center; ">
           Current(A)
         </div>
@@ -116,7 +116,7 @@
           ></ryb-grid>
         </div>
       </div>
-      <div style="min-height: 30% ; display: flex; margin:5px;">
+      <div style="min-height: 50px ; display: flex; margin:5px;">
         <div
           style="min-width: 20%; display: flex; flex-direction: column; justify-content: space-evenly;"
         >
@@ -230,7 +230,56 @@
         <div
           [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
           [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
-        ></div>
+          fxLayoutAlign="center center"
+        >
+          <ryb-list
+            [status]="'blue'"
+            [label]="'SN0100001'"
+            [data]="[0.01, 1.002, 1.003, 0.034]"
+          ></ryb-list>
+        </div>
+        <div
+          [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
+          [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
+          fxLayoutAlign="center center"
+        >
+          <ryb-list
+            [status]="'blue'"
+            [label]="'SN0100002'"
+            [data]="[0.01, 1.002, 1.003, 0.034]"
+          ></ryb-list>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center">
+        <ryb-list
+          [status]="'red'"
+          [label]="'SN0100003'"
+          [data]="[0.01, 1.002, 1.003, 0.034]"
+        ></ryb-list>
+      </div>
+      <div fxLayout="row" fxLayout.lt-sm="column">
+        <div
+          [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
+          [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
+          fxLayoutAlign="center center"
+        >
+          <ryb-list
+            [status]="'blue'"
+            [label]="'SN0100004'"
+            [data]="[0.01, 1.002, 1.003, 0.034]"
+          ></ryb-list>
+        </div>
+        <div
+          [ngStyle]="{ width: 'calc(50% - 20px)', margin: '10px' }"
+          [ngStyle.lt-sm]="{ width: 'calc(100% - 20px)', margin: '10px' }"
+          fxLayoutAlign="center center"
+        >
+          <ryb-list
+            [status]="'blue'"
+            [label]="'SN0100005'"
+            [data]="[0.01, 1.002, 1.003, 0.034]"
+          ></ryb-list>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,41 @@
+<div>
+  <div style="display: flex; justify-content: center;">{{ label }}</div>
+  <div style="display: flex; justify-content: center;">
+    <img
+      *ngIf="status === 'blue'"
+      src="../../../assets/iconimages/plugBlue.png"
+    />
+    <img
+      *ngIf="status === 'red'"
+      src="../../../assets/iconimages/plugRed.png"
+    />
+  </div>
+  <div style="display: flex; justify-content: flex-start; min-width: 100%;">
+    <ul>
+      <li>
+        <div>
+          Loading%
+        </div>
+        <div>{{ "&nbsp;" }} {{ data[0] }}</div>
+      </li>
+      <li>
+        <div>
+          R Current%
+        </div>
+        <div>{{ "&nbsp;:" }} {{ data[1] }}</div>
+      </li>
+      <li>
+        <div>
+          Y Current%
+        </div>
+        <div>{{ "&nbsp;:" }} {{ data[2] }}</div>
+      </li>
+      <li>
+        <div>
+          B Current%
+        </div>
+        <div>{{ "&nbsp;:" }} {{ data[3] }}</div>
+      </li>
+    </ul>
+  </div>
+</div>
