@@ -6,6 +6,7 @@ import { KeyHvLvComponent } from "./key-hv-lv/key-hv-lv.component";
 import { RybListComponent } from "./ryb-list/ryb-list.component";
 import { RybGridComponent } from "./ryb-grid/ryb-grid.component";
 import { OilLevelChartComponent } from "./oil-level-chart/oil-level-chart.component";
+import { GenericPagesComponent } from './generic-pages/generic-pages.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OilLevelChartComponent } from "./oil-level-chart/oil-level-chart.compon
     KeyHvLvComponent,
     RybListComponent,
     RybGridComponent,
-    OilLevelChartComponent
+    OilLevelChartComponent,
+    GenericPagesComponent
   ],
   imports: [CommonModule],
   exports: [
@@ -23,7 +25,8 @@ import { OilLevelChartComponent } from "./oil-level-chart/oil-level-chart.compon
     KeyHvLvComponent,
     RybListComponent,
     RybGridComponent,
-    OilLevelChartComponent
+    OilLevelChartComponent,
+    GenericPagesComponent
   ]
 })
 export class GenericModule {}

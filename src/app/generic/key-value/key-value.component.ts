@@ -10,6 +10,5 @@ export class KeyValueComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.data);
   }
 }
