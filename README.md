@@ -1,4 +1,3 @@
-# Saadhvi
+# Application dashboard Design
 
-## Application developed using Single screen shot
-## Sampleui.png is available in assest folder
+## Sample dash board implemented with tab navigation
