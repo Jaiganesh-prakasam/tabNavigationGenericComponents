@@ -87,7 +87,7 @@
     id="{{ i.name }}"
     (click)="differentPageSelected(i.name, i.pageLink)"
   >
-    <img src="{{ i.src }}" />
+    <img [src]="i.src" />
     <div>
       {{ i.name }}
     </div>
