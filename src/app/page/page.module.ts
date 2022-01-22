@@ -24,27 +24,33 @@ const routes: Routes = [
   },
   {
     path: "migrationStrategy",
-    component: MigrationStrategyComponent
+    component: MigrationStrategyComponent,
+    pathMatch: "full"
   },
   {
     path: "instParameter",
-    component: InstParameterComponent
+    component: InstParameterComponent,
+    pathMatch: "full"
   },
   {
     path: "Alerts",
-    component: AlertsComponent
+    component: AlertsComponent,
+    pathMatch: "full"
   },
   {
     path: "LoadSurvey",
-    component: LoadSurveyComponent
+    component: LoadSurveyComponent,
+    pathMatch: "full"
   },
   {
     path: "DailyProfile",
-    component: DailyProfileComponent
+    component: DailyProfileComponent,
+    pathMatch: "full"
   },
   {
     path: "Analytics",
-    component: AnalyticsComponent
+    component: AnalyticsComponent,
+    pathMatch: "full"
   }
 ];
 
