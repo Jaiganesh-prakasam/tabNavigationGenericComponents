@@ -1,33 +1,23 @@
-<div
-  [ngStyle]="{
+<div [ngStyle]="{
     'font-family': 'Sans-serif',
     'background-color': '#0f5558',
     'min-width': '100%',
     display: 'flex'
-  }"
->
-  <div
-    [ngStyle]="{
+  }">
+  <div [ngStyle]="{
       'background-color': '#104c39',
       height: '40px',
       width: '50px',
       display: 'flex'
-    }"
-    (click)="onToggleSidenav()"
-  >
-    <img
-      [src]="'assets/iconimages/grid-three-up-xxl.png'"
-      [ngStyle]="{
+    }" (click)="onToggleSidenav()">
+    <img [src]="'assets/iconimages/grid-three-up-xxl.png'" [ngStyle]="{
         'background-color': '#104c39',
         height: '20px',
         width: '20px',
         margin: '10px 10px 10px 10px'
-      }"
-    />
+      }" />
   </div>
-  <div
-    [ngClass.lt-sm]="{ width: '100%' }"
-    [ngStyle]="{
+  <div [ngClass.lt-sm]="{ width: '100%' }" [ngStyle]="{
       'font-family': 'Sans-serif',
       'font-weight': '500',
       width: '80%',
@@ -35,37 +25,27 @@
       'justify-content': 'center',
       'align-items': 'center',
       color: 'white'
-    }"
-  >
-    <img [src]="'assets/logo/pridectiveEnergyLogo.png'" />&nbsp; Predictive
-    Energy Instruments
+    }">
+    <img [src]="'assets/logo/pridectiveEnergyLogo.png'" />&nbsp; Energy Instruments
   </div>
-  <div
-    fxHide.lt-sm
-    [ngStyle]="{
+  <div fxHide.lt-sm [ngStyle]="{
       'font-weight': '400',
       width: '20%',
       display: 'flex',
       'justify-content': 'center',
       'align-items': 'center',
       color: 'white'
-    }"
-  >
-    <select
-      id="status"
-      [ngStyle]="{
+    }">
+    <select id="status" [ngStyle]="{
         'background-color': '#0f5558',
         color: 'white',
         border: '#104c39'
-      }"
-    >
+      }">
       <option value="user name">user name</option>
     </select>
   </div>
 </div>
-<div
-  fxHide.lt-sm
-  [ngStyle]="{
+<div fxHide.lt-sm [ngStyle]="{
     'font-family': 'Sans-serif',
     'font-size': '11px',
     'background-image': 'linear-gradient(to right, #44d99e , #2b9fae)',
@@ -73,20 +53,14 @@
     'min-height': '75px',
     display: 'flex',
     'justify-content': 'space-around'
-  }"
->
-  <div
-    [ngStyle]="{
+  }">
+  <div [ngStyle]="{
       display: 'flex',
       'flex-direction': 'column',
       'justify-content': 'center',
       'align-items': 'center',
       color: 'white'
-    }"
-    *ngFor="let i of menuItems"
-    id="{{ i.name }}"
-    (click)="differentPageSelected(i.name, i.pageLink)"
-  >
+    }" *ngFor="let i of menuItems" id="{{ i.name }}" (click)="differentPageSelected(i.name, i.pageLink)">
     <img [src]="i.src" />
     <div>
       {{ i.name }}
