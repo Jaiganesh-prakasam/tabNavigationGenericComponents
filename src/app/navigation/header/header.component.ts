@@ -17,32 +17,32 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   pageLink = "migrationStrategy";
   menuItems = [
     {
-      src: "../../../assets/logo/instantParameter.png",
+      src: "assets/logo/instantParameter.png",
       name: "Inst Parameter",
       pageLink: "instParameter"
     },
     {
-      src: "../../../assets/logo/alerts.png",
+      src: "assets/logo/alerts.png",
       name: "Alerts",
       pageLink: "Alerts"
     },
     {
-      src: "../../../assets/logo/loadSurvey.png",
+      src: "assets/logo/loadSurvey.png",
       name: "Load survey",
       pageLink: "LoadSurvey"
     },
     {
-      src: "../../../assets/logo/dailyProfile.png",
+      src: "assets/logo/dailyProfile.png",
       name: "Daily profile",
       pageLink: "DailyProfile"
     },
     {
-      src: "../../../assets/logo/migrationStrategy.png",
+      src: "assets/logo/migrationStrategy.png",
       name: "Migration strategy",
       pageLink: "migrationStrategy"
     },
     {
-      src: "../../../assets/logo/analytics.png",
+      src: "assets/logo/analytics.png",
       name: "Analytics",
       pageLink: "Analytics"
     }
