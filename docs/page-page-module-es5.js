@@ -72001,13 +72001,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function RybListComponent_img_4_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 3);
+      }
+
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", "assets/iconimages/plugBlue.png", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
       }
     }
 
     function RybListComponent_img_5_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "img", 3);
+      }
+
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", "../../../assets/iconimages/plugRed.png", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
       }
     }
 
@@ -72038,7 +72046,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       decls: 28,
       vars: 11,
-      consts: [[2, "display", "flex", "justify-content", "center"], ["src", "../../../assets/iconimages/plugBlue.png", 4, "ngIf"], ["src", "../../../assets/iconimages/plugRed.png", 4, "ngIf"], [2, "display", "flex", "justify-content", "flex-start", "min-width", "100%"], ["src", "../../../assets/iconimages/plugBlue.png"], ["src", "../../../assets/iconimages/plugRed.png"]],
+      consts: [[2, "display", "flex", "justify-content", "center"], [3, "src", 4, "ngIf"], [2, "display", "flex", "justify-content", "flex-start", "min-width", "100%"], [3, "src"]],
       template: function RybListComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
@@ -72051,13 +72059,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, RybListComponent_img_4_Template, 1, 0, "img", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, RybListComponent_img_4_Template, 1, 1, "img", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, RybListComponent_img_5_Template, 1, 0, "img", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, RybListComponent_img_5_Template, 1, 1, "img", 1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 2);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "ul");
 
@@ -72822,8 +72830,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       type: MigrationStrategyComponent,
       selectors: [["app-migration-strategy"]],
       decls: 113,
-      vars: 103,
-      consts: [[1, "background"], ["fxLayout", "row", "fxLayout.lt-sm", "column", 1, "card-container"], [1, "card", "card-left", "card-top"], [3, "keyValue", 4, "ngFor", "ngForOf"], [1, "card", "card-right", "card-top"], ["fxLayout", "row", "fxLayout.lt-sm", "column"], [3, "ngStyle", "ngStyle.lt-sm"], [3, "key", "value"], [3, "key", "value1", "value2"], [3, "key", "value", "unit"], [1, "card", "card-left", "card-bottom"], [2, "display", "flex"], [2, "display", "flex", "align-items", "center", "width", "20%"], ["src", "../../../assets/iconimages/plugOrange.png"], [2, "width", "50%", "display", "flex", "justify-content", "space-evenly"], [1, "button-general", "button-shadow"], [1, "button-general", "button-plain"], [2, "width", "30%", "display", "flex", "justify-content", "flex-end"], [1, "button-general", "button-raised"], [2, "min-height", "50px", "display", "flex", "margin", "5px"], [2, "min-width", "20%", "display", "flex", "align-items", "center"], [2, "display", "flex", "min-width", "80%", "justify-content", "space-evenly"], [2, "width", "45%", 3, "col1Obj", "col2Obj", "col3Obj"], [2, "width", "45%", 3, "heading", "col1Obj", "col2Obj", "col3Obj"], [2, "min-width", "20%", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly"], [2, "display", "flex", "min-height", "calc(100% - 6px)", "width", "45%"], [2, "min-width", "50%", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly"], [2, "min-width", "calc(50% - 6px)", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly", "border", "solid #eeeded 3px", "font-size", "10px"], [2, "padding-left", "20px"], [2, "min-height", "30%", "display", "flex", "margin", "5px"], [2, "min-width", "calc(50% - 6px)", "display", "flex", "justify-content", "space-evenly", "border", "solid #eeeded 3px", "font-size", "10px"], [1, "temp-container"], [1, "temp-heading"], ["width", "65", "height", "90", "type", "thermometer", "dataFormat", "JSON", 3, "dataSource"], [2, "display", "flex", "min-width", "30%", "justify-content", "space-evenly"], [2, "display", "flex", "min-height", "calc(100% - 6px)", "width", "80%"], [2, "min-width", "calc(100% - 6px)", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly", "border", "solid #eeeded 3px", "font-size", "10px"], [1, "temp-body"], [1, "card", "card-right", "card-bottom"], ["fxLayoutAlign", "center center", 3, "ngStyle", "ngStyle.lt-sm"], [3, "status", "label", "data"], ["fxLayout", "row", "fxLayout.lt-sm", "column", "fxLayoutAlign", "center center"], [3, "keyValue"]],
+      vars: 104,
+      consts: [[1, "background"], ["fxLayout", "row", "fxLayout.lt-sm", "column", 1, "card-container"], [1, "card", "card-left", "card-top"], [3, "keyValue", 4, "ngFor", "ngForOf"], [1, "card", "card-right", "card-top"], ["fxLayout", "row", "fxLayout.lt-sm", "column"], [3, "ngStyle", "ngStyle.lt-sm"], [3, "key", "value"], [3, "key", "value1", "value2"], [3, "key", "value", "unit"], [1, "card", "card-left", "card-bottom"], [2, "display", "flex"], [2, "display", "flex", "align-items", "center", "width", "20%"], [3, "src"], [2, "width", "50%", "display", "flex", "justify-content", "space-evenly"], [1, "button-general", "button-shadow"], [1, "button-general", "button-plain"], [2, "width", "30%", "display", "flex", "justify-content", "flex-end"], [1, "button-general", "button-raised"], [2, "min-height", "50px", "display", "flex", "margin", "5px"], [2, "min-width", "20%", "display", "flex", "align-items", "center"], [2, "display", "flex", "min-width", "80%", "justify-content", "space-evenly"], [2, "width", "45%", 3, "col1Obj", "col2Obj", "col3Obj"], [2, "width", "45%", 3, "heading", "col1Obj", "col2Obj", "col3Obj"], [2, "min-width", "20%", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly"], [2, "display", "flex", "min-height", "calc(100% - 6px)", "width", "45%"], [2, "min-width", "50%", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly"], [2, "min-width", "calc(50% - 6px)", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly", "border", "solid #eeeded 3px", "font-size", "10px"], [2, "padding-left", "20px"], [2, "min-height", "30%", "display", "flex", "margin", "5px"], [2, "min-width", "calc(50% - 6px)", "display", "flex", "justify-content", "space-evenly", "border", "solid #eeeded 3px", "font-size", "10px"], [1, "temp-container"], [1, "temp-heading"], ["width", "65", "height", "90", "type", "thermometer", "dataFormat", "JSON", 3, "dataSource"], [2, "display", "flex", "min-width", "30%", "justify-content", "space-evenly"], [2, "display", "flex", "min-height", "calc(100% - 6px)", "width", "80%"], [2, "min-width", "calc(100% - 6px)", "display", "flex", "flex-direction", "column", "justify-content", "space-evenly", "border", "solid #eeeded 3px", "font-size", "10px"], [1, "temp-body"], [1, "card", "card-right", "card-bottom"], ["fxLayoutAlign", "center center", 3, "ngStyle", "ngStyle.lt-sm"], [3, "status", "label", "data"], ["fxLayout", "row", "fxLayout.lt-sm", "column", "fxLayoutAlign", "center center"], [3, "keyValue"]],
       template: function MigrationStrategyComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -73190,7 +73198,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](77, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](78, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](78, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](79, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -73210,7 +73218,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](79, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](80, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](80, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](81, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
@@ -73244,17 +73252,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("key", "Year of manufacturer")("value", 2010);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](21);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("col1Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](81, _c2))("col2Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](82, _c3))("col3Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](83, _c4));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", "assets/iconimages/plugOrange.png", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](16);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("col1Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](82, _c2))("col2Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](83, _c3))("col3Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](84, _c4));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("heading", "Current (%)")("col1Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](84, _c2))("col2Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](85, _c3))("col3Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](86, _c4));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("heading", "Current (%)")("col1Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](85, _c2))("col2Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](86, _c3))("col3Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](87, _c4));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](25);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("heading", "Voltage")("col1Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](87, _c5))("col2Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](88, _c6))("col3Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](89, _c7));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("heading", "Voltage")("col1Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](88, _c5))("col2Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](89, _c6))("col3Obj", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](90, _c7));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
 
@@ -73282,39 +73294,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](90, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](91, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](91, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](92, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100001")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](92, _c8));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100001")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](93, _c8));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](93, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](94, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](94, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](95, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100002")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](95, _c8));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100002")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](96, _c8));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "red")("label", "SN0100003")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](96, _c8));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "red")("label", "SN0100003")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](97, _c8));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](97, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](98, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](98, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](99, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100004")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](99, _c8));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100004")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](100, _c8));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](100, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](101, _c1));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](101, _c0))("ngStyle.lt-sm", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](102, _c1));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100005")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](102, _c8));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("status", "blue")("label", "SN0100005")("data", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](103, _c8));
         }
       },
       directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], _angular_flex_layout_extended__WEBPACK_IMPORTED_MODULE_3__["DefaultStyleDirective"], _generic_key_input_unit_key_input_unit_component__WEBPACK_IMPORTED_MODULE_4__["KeyInputUnitComponent"], _generic_key_hv_lv_key_hv_lv_component__WEBPACK_IMPORTED_MODULE_5__["KeyHvLvComponent"], _generic_ryb_grid_ryb_grid_component__WEBPACK_IMPORTED_MODULE_6__["RybGridComponent"], angular_fusioncharts__WEBPACK_IMPORTED_MODULE_7__["FusionChartsComponent"], _generic_oil_level_chart_oil_level_chart_component__WEBPACK_IMPORTED_MODULE_8__["OilLevelChartComponent"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], _generic_ryb_list_ryb_list_component__WEBPACK_IMPORTED_MODULE_9__["RybListComponent"], _generic_key_value_key_value_component__WEBPACK_IMPORTED_MODULE_10__["KeyValueComponent"]],
