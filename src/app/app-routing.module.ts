@@ -5,7 +5,7 @@ import { PageModule } from "./page/page.module";
 const routes: Routes = [
   {
     path: "page",
-    loadChildren: "./page/page.module#PageModule"
+    loadChildren: () => import('./page/page.module').then(m => m.PageModule)
   },
   { path: "", redirectTo: "page", pathMatch: "full" },
   { path: "**", redirectTo: "page", pathMatch: "full" }
